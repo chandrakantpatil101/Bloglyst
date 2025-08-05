@@ -1,0 +1,68 @@
+@import "tailwindcss";
+/* @tailwind base;
+@tailwind components; */
+/* @tailwind utilities; */
+
+
+:root {
+  /* Light Theme (Elegant Contrast) */
+  --bg: #F4F4F5;
+  --card: #FFFFFF;
+  --text: #1A1A1A;
+  --accent: #7F56D9;
+  --hover: #6B46C1;
+  --tag: #7F56D9;
+}
+
+/* .dark {
+  Dark Theme (Modern Dark)
+  --bg: #121212;
+  --card: #1E1E1E;
+  --text: #E0E0E0;
+  --accent: #00BFA6;
+  --hover: #00FFC2;
+  --tag: #FCA311;
+} */
+
+/* Base Styles */
+body {
+  margin: 0;
+  /* background-color: var(--bg); */
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s ease-in-out;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 768px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.card {
+  background-color: var(--card);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+button {
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--hover);
+}
+
+.tag {
+  color: var(--tag);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
