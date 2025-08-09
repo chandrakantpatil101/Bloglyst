@@ -16,7 +16,7 @@ function App() {
       .then((userData) => {
         if (userData) {
           dispatch(login(userData))
-          console.log(userData.name, "Already loggedIn");
+          console.log(userData.name, "Already loggedIn as",userData.$id);
         } else {
           dispatch(logout())
           console.log("No loggedIn");
