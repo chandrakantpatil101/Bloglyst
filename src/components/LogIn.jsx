@@ -21,6 +21,7 @@ function LogIn() {
         // console.log("UserData ", userData);
         if (userData) {
           dispatch(login(userData))
+          console.log("Navigating to /all-posts");
           navigate('/all-posts')
           console.log(userData.name, "LoggedIn");
         }

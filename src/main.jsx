@@ -13,6 +13,7 @@ import AllBlogs from './components/AllBlogs.jsx'
 import CreatePost from './components/CreatePost.jsx'
 import EditPost from './components/EditPost.jsx'
 import ViewBlog from './components/ViewBlog.jsx'
+import Protected from './miniComponents/AuthLayout.jsx'
 import { Toaster } from 'react-hot-toast'
 
 const router = createBrowserRouter([
@@ -26,31 +27,32 @@ const router = createBrowserRouter([
       },
       {
         path:'/signup',
-        element:<SignUp/>
+        element:<Protected authentication = {false}> <SignUp/> </Protected>
       },
       {
         path:'/login',
-        element:<LogIn/>
+        element:<Protected authentication = {false}> <LogIn/> </Protected>
       },
       {
         path:'/all-posts',
-        element:<AllPosts/>
+        element:<Protected authentication> <AllPosts/> </Protected>
       },
       {
         path:'/all-blogs',
-        element:<AllBlogs/>
+        element:<Protected authentication> <AllBlogs/> </Protected>
       },
       {
         path:'/create-post',
-        element:<CreatePost/>
+        element:<Protected authentication> <CreatePost/> </Protected>
       },
       {
         path:'/edit-post/:slug',
-        element:<EditPost/>
+        element:<Protected authentication> <EditPost/> </Protected>
       },
       {
         path:'/view-blog/:id',
-        element:<ViewBlog/>
+        element:<Protected authentication> <ViewBlog/> </Protected>
+        
       }
     ]
   }

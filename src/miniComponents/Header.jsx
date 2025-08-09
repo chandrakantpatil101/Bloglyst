@@ -42,7 +42,7 @@ function Header() {
 
 
   return (
-    <header className="bg-white dark:bg-[#1E1E1E] text-[#1A1A1A] dark:text-[#E0E0E0] px-6 md:px-16 py-4 shadow-sm border-b border-gray-200 dark:border-gray-700">
+    <header className=" fixed top-0 w-full z-50 bg-white dark:bg-[#1E1E1E] text-[#1A1A1A] dark:text-[#E0E0E0] px-6 md:px-16 py-4 shadow-lg/60 border-b border-gray-200 dark:border-gray-700">
       <nav className="flex flex-row justify-between items-center">
         {/* Logo + Name */}
         <div className="flex items-center space-x-2">
