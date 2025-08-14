@@ -22,7 +22,7 @@ function Footer() {
 
       {/* Bottom credit */}
       <div className="mt-10 text-center text-xs text-gray-500 dark:text-gray-400">
-        Developed with 🦅 by Okatu!
+        Developed with 🦅 by Chandrakant
         <br />
         {/* Made in INDIA */}
       </div>
